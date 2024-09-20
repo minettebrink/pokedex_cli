@@ -17,7 +17,7 @@ The goal of this project:
 
 - Implemented caching [pokecache](interal/pokecache) to make moving around smoother. It made it possible to store some data instead of always requesting it. 
 
-# Different commands
+## Different commands
 - The the PokeAPI was added. The [command_map.go](command_map.go) displays 20 different locations in the Pokemon world and [command_mapb.go](command_mapb.go) displays the 20 previous locations.
 
 - You may want to be able to explore different locations by the [command_explore.go](command_explore.go).
