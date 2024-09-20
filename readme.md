@@ -1,6 +1,6 @@
 # Pokedex
 
-This project is a part of [boot.dev](https//boot.dev). The assignment was _Build a REPL pokedex on the command line in Go_. 
+This project is a part of [boot.dev](https://www.boot.dev/). The assignment was _Build a REPL pokedex on the command line in Go_. 
 
 So, it is a Pokedex-like REPL in Go. It uses the PokeAPI to fetch data about different Pokemons. Then, in the REPL, you can, for example, search, catch or inspect different Pokemons. 
 
