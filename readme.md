@@ -46,7 +46,7 @@ map: Get the next page of locations
 
 Pokedex >
 ```
-Type `map` to see what locations you can go, with `mapb`can you go back a page.
+Type `map` to see what locations you can go, with `mapb` can you go back a page.
 ```
 Pokedex > map
 canalave-city-area
@@ -57,7 +57,7 @@ sinnoh-pokemon-league-area
 ...
 ```
 
-Explore to see what Pokemons are in that location.
+Use `explore` to see what Pokemons are in that location.
 ```
 Pokedex > explore canalave-city-area
 Exploring canalave-city-area...
@@ -72,17 +72,19 @@ Found Pokemon:
 Continue by catching Pokemons and creating an impressive Pokedex!
 
 ## Project workflow 
-The project began with the creation of a REPL, encapsulated in [repl.go](repl.go), along with foundational commands for `help`, implemented in [command_help.go](command_help.go), and `exit`, implemented in [command_exit.go](command_exit.go).
+I started with creating the REPL, implemented in [repl.go](repl.go), along with basic commands: 
+- `help`, [command_help.go](command_help.go), 
+- `exit`, [command_exit.go](command_exit.go).
 
-Next, the PokeAPI, found in [pokeapi](internal/pokeapi/), was integrated to enable fetching Pokémon data. 
+Next, I integrated the [PokeAPI](internal/pokeapi/) to enable fetching Pokémon data. 
 
-To enhance user experience, I implemented caching through [pokecache](internal/pokecache/). This allows certain data to be stored rather than constantly requested, smoothing out movement within the application.
+To enhance the user experience, I implemented caching in [pokecache directory](internal/pokecache/). This allows for certain data to be stored rather than constantly requested.
 
-After this, I added various commands to expand functionality:
+After this, I added various commands to be able to move and catch Pokemons:
 - The command `map`, implemented in[command_map.go](command_map.go), displays 20 locations within the Pokémon world.
 - The command `mapb`, implemented in[command_mapb.go](command_mapb.go), shows the 20 previous locations for easier navigation.
-- For an exploration of different locations, the command `explore <location>` was added and implemented in [command_explore.go](command_explore.go).
-- To be able to catch Pokémon the command `catch <pokemon_name>` was added, implemented in [command_catch.go](command_catch.go)
+- For exploring different locations: `explore <location>`, implemented in [command_explore.go](command_explore.go).
+- To be able to catch Pokémons: `catch <pokemon_name>`, implemented in [command_catch.go](command_catch.go)
 - After catching a Pokémon, you can inspect it using the command `inspect <pokemon_name>`, implemented in  [command_inspect.go](command_inspect.go).
 - Finally, the `pokedex` command lets you view all the Pokémon you've caught, implemented in [command_pokedex.go](command_pokedex.go).
 
