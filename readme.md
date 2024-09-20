@@ -79,10 +79,10 @@ Next, the PokeAPI, found in [pokeapi](internal/pokeapi/), was integrated to enab
 To enhance user experience, I implemented caching through [pokecache](internal/pokecache/). This allows certain data to be stored rather than constantly requested, smoothing out movement within the application.
 
 After this, I added various commands to expand functionality:
-The command `map`, implemented in[command_map.go](command_map.go), displays 20 locations within the Pokémon world.
-The command `mapb`, implemented in[command_mapb.go](command_mapb.go), shows the 20 previous locations for easier navigation.
-For an exploration of different locations, the command `explore <location>` was added and implemented in [command_explore.go](command_explore.go).
-To be able to catch Pokémon the command `catch <pokemon_name>` was added, implemented in [command_catch.go](command_catch.go)
-After catching a Pokémon, you can inspect it using the command `inspect <pokemon_name>`, implemented in  [command_inspect.go](command_inspect.go).
-Finally, the `pokedex` command lets you view all the Pokémon you've caught, implemented in [command_pokedex.go](command_pokedex.go).
+- The command `map`, implemented in[command_map.go](command_map.go), displays 20 locations within the Pokémon world.
+- The command `mapb`, implemented in[command_mapb.go](command_mapb.go), shows the 20 previous locations for easier navigation.
+- For an exploration of different locations, the command `explore <location>` was added and implemented in [command_explore.go](command_explore.go).
+- To be able to catch Pokémon the command `catch <pokemon_name>` was added, implemented in [command_catch.go](command_catch.go)
+- After catching a Pokémon, you can inspect it using the command `inspect <pokemon_name>`, implemented in  [command_inspect.go](command_inspect.go).
+- Finally, the `pokedex` command lets you view all the Pokémon you've caught, implemented in [command_pokedex.go](command_pokedex.go).
 
