@@ -89,6 +89,5 @@ After this, I added various commands to be able to move and catch Pokemons:
 - Finally, the `pokedex` command lets you view all the Pokémon you've caught, implemented in [command_pokedex.go](command_pokedex.go).
 
 ### Submit a pull request
-
 If you'd like to contribute, please fork the repository and open a pull request to the `main` branch.
 
